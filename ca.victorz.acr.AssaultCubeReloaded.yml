@@ -46,3 +46,4 @@ modules:
       - install -Dm755 ../../bin_unix/native_server ${FLATPAK_DEST}/share/acreloaded/bin_unix/native_server
       - install -Dm755 ../../client.sh ${FLATPAK_DEST}/bin/client
       - install -Dm755 ../../server.sh ${FLATPAK_DEST}/bin/server
+      - ln -sf ${FLATPAK_DEST}/bin/client ${FLATPAK_DEST}/bin/acreloaded
