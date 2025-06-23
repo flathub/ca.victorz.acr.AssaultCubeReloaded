@@ -41,11 +41,11 @@ modules:
     post-install:
       - install -d ${FLATPAK_DEST}/share/acreloaded
       - cp -rf ../../bot ../../config ../../packages ../../acr/packages ${FLATPAK_DEST}/share/acreloaded
-      - install -Dm644 ../../freedesktop/ca.victorz.acr.AssaultCubeReloaded.svg -t
+      - install -Dm644 ../../.freedesktop/ca.victorz.acr.AssaultCubeReloaded.svg -t
         ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/
-      - install -Dm644 ../../freedesktop/ca.victorz.acr.AssaultCubeReloaded.desktop
+      - install -Dm644 ../../.freedesktop/ca.victorz.acr.AssaultCubeReloaded.desktop
         -t ${FLATPAK_DEST}/share/applications/
-      - install -Dm644 ../../freedesktop/ca.victorz.acr.AssaultCubeReloaded.appdata.xml
+      - install -Dm644 ../../.freedesktop/ca.victorz.acr.AssaultCubeReloaded.appdata.xml
         -t ${FLATPAK_DEST}/share/metainfo/
       - install -Dm755 ../../bin_unix/native_client ${FLATPAK_DEST}/share/acreloaded/bin_unix/native_client
       - install -Dm755 ../../bin_unix/native_server ${FLATPAK_DEST}/share/acreloaded/bin_unix/native_server
